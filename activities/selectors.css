@@ -1,0 +1,16 @@
+body {font-family: Arial, Helvetica, sans-serif;} 
+main p {
+    color: #1f9;
+}
+#sec {
+    color: #ff9595;
+}
+.larger { font-size: 25pt;
+}
+.pink { color: rgb(248, 108, 159);
+}
+.seperate p { font-family: jokerman;
+font-size: 20pt; color: blueviolet;
+}
+.smaller { font-size: 10pt;
+}
