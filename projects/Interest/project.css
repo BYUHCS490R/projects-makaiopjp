@@ -1,0 +1,54 @@
+header {
+    background-color: rgb(239, 11, 11);
+    color: #FFFDD0;
+    font-style: italic;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(66, 59, 59, 0.808);
+}
+#int {
+    color: rgb(0, 0, 0);
+    font-family: overpass;
+    font-size: large;
+}
+#onelink {
+    color: rgb(0, 0, 0);
+    font-family: overpass;
+    font-size: large;
+}
+body {
+    background-color: #fdfdaefc;
+}
+footer {
+    background-color: rgb(239, 11, 11);
+    color: #050505;
+    font-style: italic;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(66, 59, 59, 0.808);
+}
+.mma {
+    color: rgb(251, 1, 1);
+   font-style: italic;
+}
+main {
+    color: rgba(66, 59, 59, 0.808);
+    font-family: cursive;
+    font-size: medium;
+}
+.mmap1 {
+    color: rgb(15, 12, 12);
+    font-family: cursive;
+    font-size: medium;
+}
+h2 {
+    color: rgb(239, 12, 12);
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
+}
+dd {
+    color: rgb(15, 12, 12);
+    font-family: cursive;
+    font-size: medium;
+}
