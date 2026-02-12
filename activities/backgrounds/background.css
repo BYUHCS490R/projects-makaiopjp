@@ -10,6 +10,7 @@ header {
     background: url("Pngtree.png") no-repeat;
     background-position: bottom right;
     background-size: contain; 
+    height: 100px;
 }
 .list {
     list-style-image: url("smallicon.png");
