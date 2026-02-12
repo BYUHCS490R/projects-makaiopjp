@@ -1,0 +1,16 @@
+body {
+    background-image: url("Abstract_blue_background7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif; color: tomato;
+    font-size: 18px;
+}
+header {
+    background: url("Pngtree.png") no-repeat;
+    background-position: bottom right;
+    background-size: contain; 
+}
+.list {
+    list-style-image: url("smallicon.png");
+}
