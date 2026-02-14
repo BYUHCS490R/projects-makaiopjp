@@ -6,17 +6,17 @@ nav a {
     display: inline-block;
 
 }
-.current { color: forestgreen; font-family: cursive; font-size: 20px;
+.current { font-family: cursive; font-size: 15px; color: forestgreen; 
 }
-.current1 { color: rgb(21, 110, 200); font-family: cursive; font-size: 20px;
+.current1 { font-family: cursive; font-size: 15px; color: rgb(21, 110, 200); 
 }
-.current2 { color:gold; font-family: cursive; font-size: 20px;  
+.current2 {  font-family: cursive; font-size: 15px; color:gold;  
 }
-.current3 { color: black; font-family: cursive; font-size: 20px;  
+.current3 {  font-family: cursive; font-size: 15px; color:black;
 }
-.current4 { color: coral; font-family: cursive; font-size: 20px;  
+.current4 {  font-family: cursive; font-size: 15px; color:coral;
 }  
-.current5 { color: sandybrown; font-family: cursive; font-size: 20px;  
+.current5 {  font-family: cursive; font-size: 15px; color:sandybrown;
 }   
 .places { list-style-image: url("favicon\ \(2\).ico");
 }
