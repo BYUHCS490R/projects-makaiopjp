@@ -6,9 +6,18 @@ nav a {
     display: inline-block;
 
 }
-.current { color: cornflowerblue;
-
+.current { color: forestgreen; font-family: cursive; font-size: 20px;
 }
+.current1 { color: rgb(21, 110, 200); font-family: cursive; font-size: 20px;
+}
+.current2 { color:gold; font-family: cursive; font-size: 20px;  
+}
+.current3 { color: black; font-family: cursive; font-size: 20px;  
+}
+.current4 { color: coral; font-family: cursive; font-size: 20px;  
+}  
+.current5 { color: sandybrown; font-family: cursive; font-size: 20px;  
+}   
 .places { list-style-image: url("favicon\ \(2\).ico");
 }
 body {
