@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+header {
+    background-color: powderblue;
+    color: black;
+    padding: 50px 10px 50px 100px;
+}
+main {
+    background-color: pink;
+    color: black;
+}
+footer {
+    border: 10px groove black;
+    background-color: lightsteelblue;
+    color: black;
+    border-width: 10px;
+    border-color: black;
+    border-style: groove;
+}
+.mainpicture {
+    background-color: blanchedalmond;
+    width: 400px;
+    margin: 50px 80px;
+}
+.mainpicture img {
+    width: 400px; 
+}
