@@ -1,0 +1,27 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.anime {
+    width: 300px;
+    border: rgb(238, 98, 23) solid;
+    float: right;
+}
+.anime img {
+    width: 100%;
+    height: auto;
+}
+
+.stop {
+    clear: both;
+}
+.floatleft {
+    float: left;
+}
+.place{
+    
+}
+.relative {
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
