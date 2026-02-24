@@ -19,7 +19,6 @@ header {
     background-image: url(anime_jump.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: fixed;
     margin: 0 auto;
 }
 
@@ -36,7 +35,7 @@ footer {
 }
 
 #wrapper {
-    width: 950px;
+    width: 800px;
     color: white;
 }
 nav a {
