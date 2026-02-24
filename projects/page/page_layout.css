@@ -51,9 +51,10 @@ nav a {
 }
 
 h2 {
-    color: fuchsia;
-    text-shadow: 5px 5px 3px rgb(146, 142, 146);
+    color: rgb(255, 0, 0);
+    text-shadow: 7px 7px 4px orangered;
     font-family: cursive;
+    font-size: 30px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -61,10 +62,11 @@ nav a:hover {
     color: blue;
 }
 
-figure {
+.anime_place {
     float: right;
     border: 5px orangered solid;
     padding: 5px;
+    background-color: black;
 }   
 
 figcaption { 
@@ -73,10 +75,6 @@ figcaption {
     background-color: whitesmoke;
     color: black;
 
-}
-
-.clear { 
-    clear: both;
 }
 
 main p {
@@ -88,4 +86,22 @@ main p {
     padding: 15px;
     border: 5px orange solid;
     box-shadow: 15px 15px 5px black;
+}
+
+.anime_2 img {
+    width: 500px;
+    height: 300px;
+    border: 5px orangered solid;
+    padding: 5px;
+    background-color: rgb(240, 96, 7);
+    border: black solid 5px;
+}
+
+.anime_3 img {
+    float: right;
+    border: 5px orangered solid;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: black;
 }
