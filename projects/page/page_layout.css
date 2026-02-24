@@ -1,0 +1,91 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+    background-image: url(anime_background.jpg);
+    background-size: 25% 25%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    color: yellow;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 15px 15px 5px black;
+    background-image: url(anime_jump.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    margin: 0 auto;
+}
+
+nav {
+    background-image: url(laser.png);
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+footer {
+    background-image: url(laser.png);
+    background-size: 100% 100%;
+    color: white;
+}
+
+#wrapper {
+    width: 950px;
+    color: white;
+}
+nav a {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.497);
+    color: orangered;
+    padding: 5px;
+    border-bottom: none;
+    margin: 5px;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+h2 {
+    color: fuchsia;
+    text-shadow: 5px 5px 3px rgb(146, 142, 146);
+    font-family: cursive;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: yellow;
+    color: blue;
+}
+
+figure {
+    float: right;
+    border: 5px orangered solid;
+    padding: 5px;
+}   
+
+figcaption { 
+    border: 5px orangered solid;
+    padding: 5px;
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+.clear { 
+    clear: both;
+}
+
+main p {
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-family: cursive;
+    width: 550px;
+    padding: 15px;
+    border: 5px orange solid;
+    box-shadow: 15px 15px 5px black;
+}
