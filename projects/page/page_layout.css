@@ -116,3 +116,6 @@ main p {
     height: auto;
     background-color: black;
 }
+.clear {
+    clear: both;
+}   
