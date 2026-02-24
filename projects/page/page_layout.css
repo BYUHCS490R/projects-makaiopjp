@@ -1,5 +1,6 @@
 body {
     font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
     background-image: url(anime_background.jpg);
     background-size: 25% 25%;
     background-repeat: repeat;
