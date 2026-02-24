@@ -1,6 +1,5 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    width: 800px;
     background-image: url(anime_background.jpg);
     background-size: 25% 25%;
     background-repeat: repeat;
@@ -22,6 +21,7 @@ header {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
+    line-height: normal;
 }
 
 nav {
@@ -37,7 +37,7 @@ footer {
 }
 
 #wrapper {
-    width: 800px;
+    width: 1000px;
     color: white;
 }
 nav a {
@@ -49,6 +49,7 @@ nav a {
     margin: 5px;
     text-decoration: none;
     font-family: cursive;
+    text-transform: capitalize;
 }
 
 h2 {
@@ -69,6 +70,11 @@ nav a:hover {
     padding: 5px;
     background-color: black;
 }   
+
+.anime_place img {
+    width: 500px;
+    height: auto;
+}
 
 figcaption { 
     border: 5px orangered solid;
@@ -102,7 +108,7 @@ main p {
     float: right;
     border: 5px orangered solid;
     padding: 5px;
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: auto;
     background-color: black;
 }
