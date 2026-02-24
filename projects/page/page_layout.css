@@ -1,11 +1,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    width: 800px;
+    width: 500px;
     background-image: url(anime_background.jpg);
     background-size: 25% 25%;
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
+    
 
 }
 
