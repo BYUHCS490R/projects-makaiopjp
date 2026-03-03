@@ -93,9 +93,9 @@ footer {
 .footer-grid a {
     display: block;
     color: #444;
-    text-decoration: none;
 }
 
 .footer-grid a:hover {
     text-decoration: underline;
+    text-decoration-color: powderblue;
 }
