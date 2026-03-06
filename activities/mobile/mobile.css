@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;  
+
 }
 
 header {
@@ -36,6 +37,7 @@ nav a:hover {
 
 .row {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 15px;
 }
