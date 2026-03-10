@@ -3,14 +3,12 @@ body {
     margin: 0%; 
     background-color: black; 
     color: whitesmoke;
-
 }
 
 header {
     background-color: rgb(0, 0, 0);
     font-family: fantasy;
     font-style: italic;
-    font-weight: bold;
     font-size: 20px; 
     text-align: center; 
     color: hotpink;  
@@ -47,11 +45,90 @@ main h1 {
     color: hotpink;
     font-style: italic;
     font-variant: small-caps;
+    text-shadow: 3px 3px 5px whitesmoke;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .sidebar {
     width: 30%;
+    font-size: 15px;
 }
+
+.sidefig {
+    margin: 0;
+}
+
+.sidefig img {
+    width: 100%;
+}
+
+.side {
+    font-size: 15px;
+}
+
+.card {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 3px 0;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.cardfig {
+    margin: 0;
+}
+
+.cardfig img {
+    width: 100%;
+    font-size: 10px;
+}
+
+
 footer {
     color: ghostwhite;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(12, 12, 12);
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: thin solid snow;
+        align-items: center;
+    }
+    .row {
+        flex-flow: column wrap;
+    }
+    .card {
+        width: 95%;
+    }
+    main {
+        color: azure;
+    }
+    .sidebar {
+        width: 95%;
+        order: 1;
+    }
+    
+}
+
+@media only print{
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav {
+        display: none;
+    }
 }
