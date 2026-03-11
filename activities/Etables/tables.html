@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>Table</h1> 
+    </header>
+    <main>
+        <h2>Class schedule</h2>
+        <table border="1">
+            <caption>Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IT 240</td>
+                    <td rowspan="2">Web Design</td>
+                    <td>MWF 11AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>IT 240</td>
+                    <!-- dont put td due to rowspan (rowspan will bring down this td "name")-->
+                    <td>MWF 12PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS 210</td>
+                    <td>Computer Organization</td>
+                    <td>TT 12PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Fall 2025</th>
+                </tr>
+                <tr>
+                    <td>IT 240</td>
+                    <td>Web Design</td>
+                    <td>MWF 11AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>IT 240</td>
+                    <td>Web Design</td>
+                    <td>MWF 12PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="totalcredit">Total Credits</th>
+                    <td headers="totalcredit">15</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>When do you use a Table?</p>
+        <p>When we have data that we want to present things.</p>
+        <p>When do you not use a table?</p>
+        <p>To lay things out</p>
+        <p>When do you need to do extra work for table accessibility?</p>
+        <p>Any company that makes money, or to maintaing headers in different spots</p>
+    </main>
+    <footer>
+        <p> &copy; 2026 Makaio's Web Design Site Privacy Policy | Cookie Notice | Social Links| Jobs
+        </p>
+    </footer>
+</body>
+</html>
