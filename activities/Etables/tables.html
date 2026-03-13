@@ -12,7 +12,8 @@
     </header>
     <main>
         <h2>Class schedule</h2>
-        <table border="1">
+        <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ratione adipisci labore quisquam voluptatibus fugiat placeat similique fuga obcaecati quod itaque facere ad reprehenderit cupiditate mollitia praesentium eveniet, vel illo?</p>
+        <table class="schedule">
             <caption>Class Schedule</caption>
             <thead>
                 <tr>
@@ -24,7 +25,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="odd">
                     <td>IT 240</td>
                     <td rowspan="2">Web Design</td>
                     <td>MWF 11AM</td>
@@ -33,12 +34,12 @@
                 </tr>
                 <tr>
                     <td>IT 240</td>
-                    <!-- dont put td due to rowspan (rowspan will bring down this td "name")-->
+                    <!-- dont put td due to rowspan from td above (rowspan will bring down this td "name")-->
                     <td>MWF 12PM</td>
                     <td>P2</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="odd">
                     <td>CS 210</td>
                     <td>Computer Organization</td>
                     <td>TT 12PM</td>
@@ -55,7 +56,7 @@
                     <td>P2</td>
                     <td>3</td>
                 </tr>
-                <tr>
+                <tr class="odd">
                     <td>IT 240</td>
                     <td>Web Design</td>
                     <td>MWF 12PM</td>
@@ -76,10 +77,14 @@
         <p>To lay things out</p>
         <p>When do you need to do extra work for table accessibility?</p>
         <p>Any company that makes money, or to maintaing headers in different spots</p>
-    </main>
+        <p>Why don't we use the border attribute?</p>
+        <p>Its an old way we use to use in HTML but it has been removed</p>
+        <p>What is the easiest way to color every other row a different color?</p>
+        <p>by useing css and inputing: .schedule tbody tr:nth-of-type(even)</p>
     <footer>
         <p> &copy; 2026 Makaio's Web Design Site Privacy Policy | Cookie Notice | Social Links| Jobs
         </p>
     </footer>
+    
 </body>
 </html>
