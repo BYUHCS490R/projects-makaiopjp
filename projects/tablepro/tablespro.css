@@ -60,7 +60,7 @@ table {
 width: 100%;
 border-collapse: collapse;
 background-color: beige;
-color: beige;
+color: rgb(0, 0, 0);
 font-weight: 900;
 font-size: larger;
 font-family: cursive;
