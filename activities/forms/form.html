@@ -5,56 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <h1>Makaio's Web Design Page</h1>
     </header>
     <main>
-        <form action="formprocs.html" method="get"><!--google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.-->
-            <div>
-                <label for="fname">Name:</label>
-                <input type="text" name="fullname" id="fname" required><br>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" email="email" id="email" placeholder="name@email.com"><br>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" name="pass" id="password"><br>
-            </div>
-            <div>
-                <label for="state">States:</label>
-                <select name="state" id="state">
+        <form action="processing.html" method="post"> <!--google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.-->
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="formrow">
+                    <label for="fname">Name:</label>
+                    <input type="text" name="fullname" id="fname" required>
+                </div>
+                <div class="formrow">
+                    <label for="emailinput">Email: </label>
+                    <input type="email" name="email" id="emailinput" placeholder="name@email.com">
+                </div>
+                <div class="formrow">
+                    <label for="dateinput">Birthdate: </label>
+                    <input type="date" name="birthdate" id="dateinput"><br>
+                </div>
+                <div class="formrow">
+                    <label for="password">Password: </label>
+                    <input type="password" name="pass" id="password">
+                </div>
+                <div class="checkrow">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                </div>
+                <div class="checkrow">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree" value="on" checked>I agree to the terms.</label>
+                </div>
+                <div class="formrow">
+                    <label for="state">States:</label>
+                    <select name="state" id="state">
                     <option value="blank">-----</option>
                     <option value="CA">California</option>
                     <option value="HI">Hawaii</option>
                     <option value="UT">Utah</option>
                 </select>
-            </div>
-            <div>
-                <label for="comments">Comments</label>
-                <textarea name="comments" id="comments">Pre-feilled in</textarea>
-            </div>
-            <div>
-                Gender:
-                <label><input type="radio" name="gender" value="male">Male</label>
-                <label><input type="radio" name="gender" value="female">Female</label>
-            </div>
-            <div>
-                 <label><input type="checkbox" name="remember" value="male" checked> Remember me?</label>
-            </div>
-            <div>
-                <input type="submit" value="Sign Up">
-            </div>
+                </div>
+                <div class="formrow">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="formrow">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up!">
+                </div>
+            </fieldset>
         </form>
-        <p>The form tag has an "action" attribute. What does it do?</p>
-        <p>it tells the browser where to send the form datat when the user clicks submit.</p>
-        <p>The form tag has a "method" attribute. What does it do?</p>
-        <p>it tells the browser how to send the form data, either as URL patameters/get or in the request body/post</p>
-        <p>What is the difference between a "POST" and a "GET"?</p>
-        <p>google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.</p>
     </main>
      <footer>
         <p>&copy; 2026 Makaio Primacio</p>
