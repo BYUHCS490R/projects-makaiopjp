@@ -14,6 +14,9 @@ h1 {
     display: flex;
     gap: 10px;
     margin: 10px 0;
+    color: rgb(246, 85, 112);
+    font-size: larger;
+    font-weight: bolder;
 
 }
 
