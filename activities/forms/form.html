@@ -12,20 +12,20 @@
         <h1>Makaio's Web Design Page</h1>
     </header>
     <main>
-        <form action="processing.html" method="post"> <!--google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.-->
+        <form action="processing.html" method="get" id="myform"> <!--google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.-->
             <fieldset>
-                <legend>Sign Up</legend>
+                <legend>Account</legend>
                 <div class="formrow">
-                    <label for="fname">Name:</label>
-                    <input type="text" name="fullname" id="fname" required>
+                    <label for="fullname">Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
                 </div>
                 <div class="formrow">
-                    <label for="emailinput">Email: </label>
-                    <input type="email" name="email" id="emailinput" placeholder="name@email.com">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="name@email.com">
                 </div>
                 <div class="formrow">
-                    <label for="dateinput">Birthdate: </label>
-                    <input type="date" name="birthdate" id="dateinput"><br>
+                    <label for="age">Age: </label>
+                    <input type="text" name="age" id="age"><br>
                 </div>
                 <div class="formrow">
                     <label for="password">Password: </label>
@@ -55,14 +55,51 @@
                 </div>
                 <div class="formrow">
                     <div class="spacer"></div>
-                    <input type="submit" value="Sign Up!">
+                    <input type="submit" value="Submit!">
                 </div>
             </fieldset>
         </form>
+        <p>What is JavaScript? How did it get its name?</p>
+        <p>Is a programing language.</p>
+        <p>What are the two ways you can run JavaScript?</p>
+        <p>Node.js, and every browser has a javaScript</p>
+        <p>What was the most popular front-end js library?</p>
+        <p>JQuery</p>
+        <p>What is the most popular front-end js library today?</p>
+        <p>React</p>
     </main>
      <footer>
         <p>&copy; 2026 Makaio Primacio</p>
         <p>Privacy Policy | Cookie Notice | Social Links| Jobs</p>
      </footer>
+     <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            //alert("Form Submitted");
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+            
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("You need to be 18")
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age,
+            }
+
+            console.log(formData);
+        });
+     </script>
 </body>
 </html>
