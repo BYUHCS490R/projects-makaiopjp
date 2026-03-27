@@ -35,8 +35,9 @@ document.getElementById('myform').addEventListener('submit', function(event) {
             //document.getElementById('myForm').reset();
             document.getElementById('myform').innerHTML = '';
             document.getElementById('message').innerText = response.message;
-        } else if (xhr.readyState ===4) {
+        } else if (xhr.readyState === 4) {
             alert("Error submitting form.");
         }
-    }
+    };
+    xhr.send(JSON.stringify(formData));
 });
