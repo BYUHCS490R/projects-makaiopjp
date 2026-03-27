@@ -12,6 +12,7 @@
         <h1>Makaio's Web Design Page</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="get" id="myform"> <!--google will use get: is used for search/filter/sort to retrieve data. the wont use post. post is used to send data.-->
             <fieldset>
                 <legend>Account</legend>
@@ -25,7 +26,7 @@
                 </div>
                 <div class="formrow">
                     <label for="age">Age: </label>
-                    <input type="text" name="age" id="age"><br>
+                    <input type="number" name="age" id="age"><br>
                 </div>
                 <div class="formrow">
                     <label for="password">Password: </label>
@@ -59,47 +60,13 @@
                 </div>
             </fieldset>
         </form>
-        <p>What is JavaScript? How did it get its name?</p>
-        <p>Is a programing language.</p>
-        <p>What are the two ways you can run JavaScript?</p>
-        <p>Node.js, and every browser has a javaScript</p>
-        <p>What was the most popular front-end js library?</p>
-        <p>JQuery</p>
-        <p>What is the most popular front-end js library today?</p>
-        <p>React</p>
+        <p>What is AJAX? Asynchronous JavaScript and  Json XML</p>
+        <p>Why do you put your JS Code in a separate file? </p>
     </main>
      <footer>
         <p>&copy; 2026 Makaio Primacio</p>
         <p>Privacy Policy | Cookie Notice | Social Links| Jobs</p>
      </footer>
-     <script>
-        document.getElementById('myform').addEventListener('submit', function(event) {
-            event.preventDefault();
-            //alert("Form Submitted");
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const age = document.getElementById('age').value;
-            
-            if (!fullname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("You need to be 18")
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: password,
-                age: age,
-            }
-
-            console.log(formData);
-        });
-     </script>
+     <script src="form.js"></script>
 </body>
 </html>
