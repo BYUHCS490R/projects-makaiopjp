@@ -72,7 +72,7 @@ footer {
     .formrow, .checkrow {
         flex-direction: column;
     }
-    .formrow spacer {
+    .formrow label {
         text-align: left;
     }
     .spacer {
