@@ -6,8 +6,8 @@ body {
 h1 {
     text-align: center;
     font-family: cursive;
-    color: paleturquoise;
-    text-shadow: 5px 3px 5px lightskyblue;
+    color: rgb(214, 23, 87);
+    text-shadow: 5px 3px 5px rgb(231, 61, 112);
 }
 
 .formrow, .checkrow {
