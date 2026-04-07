@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: black;
+    margin: 0%;
+}
+
+header {
+
+    background-color: orangered;
+    border: 5px solid orangered;
+    font-family: fantasy;
+    font-size: 20px; 
+    text-align: center;   
+    text-shadow: 3px 5px 3px rgb(255, 255, 255);
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 5px solid darkblue;
+    margin-top: 0px;
+    font-size: 15px;
+    background-color: darkblue;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    background-color: darkblue;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+}
+
+.current { 
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}
+.current1 {
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}
+.current2 {
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}
+.current3 {
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}
+.current4 {
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}  
+.current5 {
+    font-family: cursive; font-size: 15px; color: orangered;
+    background-color: whitesmoke;
+}   
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+footer {
+    font-family: cursive; font-size: 12px; text-align: center;
+    background-color: orangered;
+    color: black;
+    border: 5px solid whitesmoke;
+}
+
