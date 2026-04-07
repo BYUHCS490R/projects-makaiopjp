@@ -3,11 +3,14 @@ body {
     background-color: black;
     color: black;
     margin: 0%;
+    background-image: url(DBLOGO.jpg);
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
 
-    background-color: orangered;
+    background-color: rgba(255, 68, 0, 0.408);
     border: 5px solid orangered;
     font-family: fantasy;
     font-size: 20px; 
@@ -29,16 +32,16 @@ h2 {
 nav {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 5px solid darkblue;
+    border-bottom: 5px solid rgba(0, 0, 139, 0.418);
     margin-top: 0px;
     font-size: 15px;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.411);
 }
 
 nav a {
     display: block;
     padding: 5px;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.407);
     color: black;
     text-decoration: none;
 }
@@ -73,16 +76,74 @@ nav a:hover {
     background-color: whitesmoke;
 }   
 
-main {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: whitesmoke;
+main p {
+    background-color: rgba(255, 255, 255, 0.415);
+    color: black;
+    font-size: larger;
+    font-family: cursive;
+    width: 550px;
+    padding: 15px;
+    border: 5px rgb(255, 68, 0) solid;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.405);
+    display: block;
+    margin: 20px auto;
+}
+
+main ul {
+    background-color: rgba(255, 255, 255, 0.415);
+    color: black;
+    font-size: larger;
+    font-family: cursive;
+    width: 550px;
+    padding: 15px;
+    border: 5px rgb(255, 68, 0) solid;
+    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.405);
+    display: block;
+    margin: 20px auto;
+    padding: 5px 15px 15px 30px;
 }
 
 footer {
     font-family: cursive; font-size: 12px; text-align: center;
-    background-color: orangered;
+    background-color: rgba(255, 68, 0, 0.414);
     color: black;
     border: 5px solid whitesmoke;
+    font-weight: bolder;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: azure;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: thin solid snow;
+        align-items: center;
+    }
+    .row {
+        flex-flow: column nowrap;
+    }
+    .card {
+        width: 95%;
+    }
+    .main-card {
+        order: -1;
+    }
+}
+
+@media only print{
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    nav {
+        display: none;
+    }
 }
 
