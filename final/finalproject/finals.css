@@ -42,13 +42,14 @@ nav a {
     display: block;
     padding: 5px;
     background-color: rgba(0, 0, 139, 0.407);
-    color: black;
     text-decoration: none;
+    color: white;
+    font-family: cursive;
 }
 
 nav a:hover {
     text-decoration: underline;
-    background-color: rgb(255, 255, 255);
+    background-color: darkblue;
 }
 
 .current { 
