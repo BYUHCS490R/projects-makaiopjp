@@ -6,11 +6,12 @@ body {
     background-image: url(DBLOGO.jpg);
     background-attachment: fixed;
     background-position: center;
+    flex-wrap: wrap;
 }
 
 header {
 
-    background-color: rgba(255, 68, 0, 0.408);
+    background-color: rgba(255, 68, 0, 0.960);
     border: 5px solid orangered;
     font-family: fantasy;
     font-size: 20px; 
@@ -32,16 +33,16 @@ h2 {
 nav {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 5px solid rgba(0, 0, 139, 0.418);
+    border-bottom: 5px solid rgba(0, 0, 139);
     margin-top: 0px;
     font-size: 15px;
-    background-color: rgba(0, 0, 139, 0.411);
+    background-color: rgba(0, 0, 139, 0.900);
 }
 
 nav a {
     display: block;
     padding: 5px;
-    background-color: rgba(0, 0, 139, 0.407);
+    background-color: rgba(0, 0, 139, 0.960);
     text-decoration: none;
     color: white;
     font-family: cursive;
@@ -78,26 +79,24 @@ nav a:hover {
 }   
 
 main p {
-    background-color: rgba(255, 255, 255, 0.415);
+    background-color: rgba(255, 255, 255, 0.960);
     color: black;
     font-size: larger;
     font-family: cursive;
-    width: 800px;
-    padding: 15px;
-    border: 5px rgb(255, 68, 0) solid;
-    box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.405);
-    display: block;
+    padding: 5px;
+    border: 5px thin solid black;;
     margin: 20px auto;
+    display: block;
 }
 
 main ul {
-    background-color: rgba(255, 255, 255, 0.415);
+    background-color: rgba(255, 255, 255, 0.960);
     color: black;
     font-size: larger;
     font-family: cursive;
     width: 550px;
     padding: 15px;
-    border: 5px rgb(255, 68, 0) solid;
+    border: thick solid black;
     box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.405);
     display: block;
     margin: 20px auto;
@@ -110,16 +109,43 @@ main ul {
     font-size: 40px;
 }
 
-.legendary_img {
-    float: right;
-    border: 5px orangered solid;
-    padding: 5px;
-    background-color: black;
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.legendary_img img {
-    width: 500px;
-    height: 500px;
+.card {
+    border: thin solid orangered;
+    width: 700px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.960);
+}
+
+.card h2 {
+    margin: 3px 0;
+}
+
+.cardfig {
+    margin: 0;
+}
+
+.cardfig img {
+    font-size: 10px;
+    width: 60%;
+    float: left;
+    padding: 10px;
+}
+
+.card a {
+    display: block;
+    padding: 3px 5px;
+    background-color: indianred;
+    color: whitesmoke;
+    margin: 5px;
+    border-radius: 5px; 
 }
 
 .roster {
@@ -227,6 +253,7 @@ footer {
 @media only screen and (max-width: 600px) {
     body {
         background-color: azure;
+        flex-flow: nowrap;
     }
     nav {
         flex-direction: column;
@@ -241,10 +268,6 @@ footer {
     .card {
         width: 95%;
     }
-    .main-card {
-        order: -1;
-    }
-
     .formrow, .checkrow {
         flex-direction: column;
     }
@@ -266,4 +289,3 @@ footer {
         display: none;
     }
 }
-
