@@ -18,6 +18,11 @@ header {
     text-align: center;   
     text-shadow: 3px 5px 3px rgb(255, 255, 255);
     padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
 
 h1 {
@@ -30,13 +35,20 @@ h2 {
     color: orangered;
 }
 
+h2 a {
+    font-family: cursive;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 5px solid rgba(0, 0, 139);
     margin-top: 0px;
     font-size: 15px;
     background-color: rgba(0, 0, 139, 0.900);
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav a {
@@ -78,13 +90,14 @@ nav a:hover {
     background-color: whitesmoke;
 }   
 
-main p {
-    background-color: rgba(255, 255, 255, 0.960);
+main {
+    margin-top: 150px;
+}
+
+.main {
     color: black;
     font-size: larger;
-    font-family: cursive;
     padding: 5px;
-    border: 5px thin solid black;;
     margin: 20px auto;
     display: block;
 }
@@ -103,6 +116,10 @@ main ul {
     padding: 5px 15px 15px 30px;
 }
 
+.mb {
+    background-color: rgba(245, 245, 245, 0.800);
+}
+
 .legendary {
     color: darkblue;
     font-weight: bolder;
@@ -119,13 +136,22 @@ main ul {
 
 .card {
     border: thin solid orangered;
-    width: 700px;
+    width: 750px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.960);
+    background-color: rgba(255, 255, 255, 0.860);
+}
+
+
+.card2 {
+    margin: 20px auto;
 }
 
 .card h2 {
     margin: 3px 0;
+}
+
+.card2 iframe {
+    float: right;
 }
 
 .cardfig {
@@ -136,7 +162,14 @@ main ul {
     font-size: 10px;
     width: 60%;
     float: left;
-    padding: 10px;
+    padding: 15px;
+}
+
+.cardfig2 img {
+    font-size: 10px;
+    width: 40%;
+    float: right;
+    padding: 15px;
 }
 
 .card a {
@@ -146,6 +179,17 @@ main ul {
     color: whitesmoke;
     margin: 5px;
     border-radius: 5px; 
+}
+
+.card p {
+    padding: 15px;
+    font-size: larger;
+    font-family: cursive;
+    color: black;
+}
+
+.cult{
+    color: darkblue;
 }
 
 .roster {
@@ -235,7 +279,7 @@ legend {
 
 footer {
     font-family: cursive; font-size: 12px; text-align: center;
-    background-color: rgba(255, 68, 0, 0.414);
+    background-color: rgba(255, 68, 0, 0.850);
     color: black;
     border: 5px solid whitesmoke;
     font-weight: bolder;
@@ -254,6 +298,9 @@ footer {
     body {
         background-color: azure;
         flex-flow: nowrap;
+    }
+    main {
+        margin-top: 300px;
     }
     nav {
         flex-direction: column;
